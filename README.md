@@ -12,7 +12,7 @@
 
   ## 需求分析
 
-  ![9c1fe6a9dfe5e20b6233b4799081ecd](C:\Users\USER\Desktop\9c1fe6a9dfe5e20b6233b4799081ecd.jpg)
+  ![需求分析](https://github.com/tonycatgogogo/todoMVC-vanillaJS/blob/master/img1.jpg)
 
   - 监听回车键，若输入不为空，则取出输入内容，并创建li加入到下方list中
   - li前端放置勾选按钮 checkbox 若被选中，li变灰并被划除
