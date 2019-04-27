@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vanilla todoMVC</title>
+    <link rel="stylesheet" href="./css/todoMVC.index.css">
+</head>
+<body>
+<section class="todoApp">
+    <header class="header">
+        <h1>todos</h1>
+        <input class="new-todo" type="text" placeholder="what needs to be done?" autofocus>
+    </header>
+    <main class="main" style="display: block">
+        <input id="toggle-all" class="toggle-all" type="checkbox">
+        <label class="label-arrow" for="toggle-all">Mark all as complete</label>
+        <ul class="todo-list">
+            <li class="item">
+                <div class="view">
+                    <input class="toggle" type="checkbox">
+                    <label class="label-toggle">123</label>
+                    <button class="destroy"></button>
+                </div>
+            </li>
+            <li class="item">
+                <div class="view">
+                    <input class="toggle" type="checkbox">
+                    <label class="label-toggle">123</label>
+                    <button class="destroy"></button>
+                </div>
+            </li>
+            <li class="item">
+                <div class="view">
+                    <input class="toggle" type="checkbox">
+                    <label class="label-toggle">123</label>
+                    <button class="destroy"></button>
+                </div>
+            </li>
+        </ul>
+        <footer class="footer">
+            <span class="todo-count"></span>
+            <ul class="filters">
+                <li><a href="#/" class="selected">All</a></li>
+                <li><a href="#/active">Active</a></li>
+                <li><a href="#/completed">Completed</a></li>
+            </ul>
+            <button class="clear-completed">Clear completed</button>
+        </footer>
+    </main>
+</section>
+<footer class="info">
+    <p>Double-click to edit a todo</p>
+    <p>Written by <a href="http://tonycatgogogo.github.io">Haitao</a></p>
+    <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+</footer>
+</body>
+</html>
