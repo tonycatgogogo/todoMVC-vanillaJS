@@ -7,6 +7,7 @@ body {
     line-height: 1.4em;
     font-weight: 300;
 }
+
 button {
     margin: 0;
     padding: 0;
@@ -22,15 +23,19 @@ button {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-ul,ol {
+
+ul, ol {
     list-style: none;
 }
+
 :focus {
     outline: 0;
 }
+
 .hidden {
     display: none;
 }
+
 .todoApp {
     background-color: #fff;
     margin: 130px 0 40px 0;
@@ -38,52 +43,57 @@ ul,ol {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
     0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
+
 .header h1 {
     position: absolute;
     top: -155px;
     width: 100%;
     /*color: #EED7D7;*/
     color: rgba(175, 47, 47, 0.15);
-    font-size:100px;
-    font-weight:100 ;
+    font-size: 100px;
+    font-weight: 100;
     text-align: center;
 }
-.header .new-todo {
+
+.header .new-todo,
+.edit{
     position: relative;
     width: 100%;
     display: block;
     border: none;
     line-height: 1.4em;
-    padding:16px 16px 16px 60px ;
-    font-size:24px;
-    background: rgba(0,0,0,.003);
-    box-shadow: inset 0 -2px 1px rgba(0,0,0,.03);
+    padding: 16px 16px 16px 60px;
+    font-size: 24px;
+    background: rgba(0, 0, 0, .003);
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, .03);
     box-sizing: border-box;
 }
 
 
-.todoApp input::-webkit-input-placeholder {/* 使用webkit内核的浏览器 */
+.todoApp input::-webkit-input-placeholder { /* 使用webkit内核的浏览器 */
     font-style: italic;
     font-weight: 300;
     color: #e6e6e6;
 }
 
-.todoApp input::-moz-placeholder {/* Firefox版本19+ */
+.todoApp input::-moz-placeholder { /* Firefox版本19+ */
     font-style: italic;
     font-weight: 300;
     color: #e6e6e6;
 }
 
-.todoApp input::-ms-input-placeholder {/* IE浏览器 */
+.todoApp input::-ms-input-placeholder { /* IE浏览器 */
     font-style: italic;
     font-weight: 300;
     color: #e6e6e6;
 }
+
 .main {
     position: relative;
     z-index: 2;
     border-top: 1px solid #e6e6e6;
 }
+
 /*全选箭头*/
 .toggle-all {
     width: 1px;
@@ -94,6 +104,7 @@ ul,ol {
     right: 100%;
     bottom: 100%;
 }
+
 .label-arrow {
     position: absolute;
     top: -52px;
@@ -106,6 +117,7 @@ ul,ol {
     -webkit-transform: rotate(90deg);
     font-size: 0;
 }
+
 .label-arrow:before {
     content: '❯';
     font-size: 22px;
@@ -120,27 +132,45 @@ ul,ol {
     margin: 0;
     padding: 0;
 }
-.todo-list li{
+
+.todo-list li {
     width: 100%;
     font-size: 24px;
     border-bottom: 1px solid #eee;
     display: block;
 }
+
+.todo-list li.editing {
+    padding: 0;
+    border-bottom: none;
+}
+
+.todo-list li.editing .edit {
+    display: block;
+    width: 506px;
+    padding: 12px 16px;
+    margin: 0 0 0 43px;
+}
+
+.todo-list li.editing .view {
+    display: none;
+}
+
 .todo-list li:last-child {
     border-bottom: none;
 }
+
 .todo-list .view {
     position: relative;
     display: flex;
     flex-direction: column;
     padding: 10px 12px 10px 70px;
 }
+
 .todo-list li .toggle {
     text-align: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #eee;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -148,7 +178,12 @@ ul,ol {
     margin: auto 0;
     -webkit-appearance: none;
     -moz-appearance: none;
+    background-image: url('../images/checkbox1.svg');
     /*opacity: 0;*/
+}
+
+.todo-list li .toggle:checked {
+    background-image: url('../images/checkbox.svg');
 }
 
 .todo-list li label {
@@ -159,10 +194,12 @@ ul,ol {
     margin: 5px 0;
     transition: color 0.4s;
 }
+
 .todo-list li.completed label {
     color: #d9d9d9;
     text-decoration: line-through;
 }
+
 .todo-list li .destroy {
     display: none;
     position: absolute;
@@ -177,6 +214,7 @@ ul,ol {
     margin-bottom: 11px;
     transition: color 0.2s ease-out;
 }
+
 .todo-list li .destroy:hover {
     color: #af5b5e;
 }
@@ -187,6 +225,12 @@ ul,ol {
 
 .todo-list li:hover .destroy {
     display: block;
+}
+.todo-list li .edit {
+    display: none;
+}
+.todo-list li.editing:last-child {
+    margin-bottom: -1px;
 }
 .footer {
     color: #777;
@@ -210,6 +254,7 @@ ul,ol {
     0 16px 0 -6px #f6f6f6,
     0 17px 2px -6px rgba(0, 0, 0, 0.2);
 }
+
 .todo-count {
     float: left;
     text-align: left;
@@ -250,7 +295,7 @@ ul,ol {
 }
 
 .clear-completed,
-html .clear-completed:active {
+.clear-completed:active {
     float: right;
     position: relative;
     line-height: 20px;
