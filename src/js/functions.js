@@ -33,3 +33,4 @@ export function $delegate(target, selector, type, handler) {
     }
     $on(target,type,dispatchEvent)
 }
+
