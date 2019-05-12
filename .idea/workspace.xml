@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d476886-13c1-4190-a97d-24c0ac77837e" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/todoMVC.base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/todoMVC.index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/checkbox.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/checkbox1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/functions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/item.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/template.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/views.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
-    </list>
+    <list default="true" id="5d476886-13c1-4190-a97d-24c0ac77837e" name="默认的" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -118,15 +97,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557117182434</updated>
-      <workItem from="1557117184044" duration="900000" />
+      <workItem from="1557117184044" duration="1154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="900000" />
+    <option name="totallyTimeSpent" value="1154000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
